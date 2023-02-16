@@ -12,3 +12,8 @@ func TestAttackTitan_Abilities(t *testing.T) {
 	titan := &titan.AttackTitan{}
 	require.Contains(t, titan.Abilities(), "Attack Titan")
 }
+
+func TestAttackTitan_FriendAbilities(t *testing.T) {
+	titan := &titan.AttackTitan{}
+	require.Contains(t, titan.FriendAbilities(), "Strength")
+}
